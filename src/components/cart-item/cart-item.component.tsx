@@ -4,8 +4,13 @@ import {
   Name,
   Price,
 } from "./cart-item.styles";
+import { CartItem as TCartItem } from "../../store/cart/cart.types";
 
-const CartItem = ({ cartItem }) => {
+type CartItemProps = {
+  cartItem: TCartItem;
+};
+
+const CartItem = ({ cartItem }: CartItemProps) => {
   const { name, imageUrl, price, quantity } = cartItem;
   return (
     <CartItemContainer>
