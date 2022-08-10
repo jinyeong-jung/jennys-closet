@@ -37,6 +37,10 @@ export const Body = styled.div`
     margin: 10px 0;
     color: #555555;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 50%;
+  }
 `;
 
 export const DirectoryItemContainer = styled.div`
@@ -65,5 +69,9 @@ export const DirectoryItemContainer = styled.div`
 
   &:last-child {
     margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
   }
 `;
